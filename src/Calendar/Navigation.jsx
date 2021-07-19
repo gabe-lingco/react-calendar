@@ -127,6 +127,7 @@ export default function Navigation({
     return (
       <button
         aria-label={navigationAriaLabel}
+        aria-live={navigationAriaLive}
         className={labelClassName}
         disabled={!drillUpAvailable}
         onClick={drillUp}
@@ -212,6 +213,7 @@ Navigation.propTypes = {
   maxDate: PropTypes.instanceOf(Date),
   minDate: PropTypes.instanceOf(Date),
   navigationAriaLabel: PropTypes.string,
+  navigationAriaLive: PropTypes.string,
   navigationLabel: PropTypes.func,
   next2AriaLabel: PropTypes.string,
   next2Label: PropTypes.node,
