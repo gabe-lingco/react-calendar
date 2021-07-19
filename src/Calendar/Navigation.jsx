@@ -29,6 +29,7 @@ export default function Navigation({
   maxDate,
   minDate,
   navigationAriaLabel = '',
+  navigationAriaLive = 'off',
   navigationLabel,
   next2AriaLabel = '',
   next2Label = '»',
